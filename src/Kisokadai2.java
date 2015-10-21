@@ -5,11 +5,12 @@ public class Kisokadai2 {
 		System.out.println("数当てゲーム");
 		int anser = new java.util.Random().nextInt(100);
 	  
-		for (int i = 0; i < 5; i++){
+		for (;;){
 			System.out.println("1~100までの数字を入力してください");
-			@SuppressWarnings("resource")
-			int input = new java.util.Scanner(System.in).nextInt();
+			
 			try{
+				@SuppressWarnings("resource")
+				int input = new java.util.Scanner(System.in).nextInt();
 				if(anser == input){
 					System.out.println("あたり");
 					break;
@@ -19,7 +20,8 @@ public class Kisokadai2 {
 					System.out.println("答えは"+input+"より小さいです");
 				}
 			}catch(Exception e){
-				System.out.println("数字以外を入力しないでください");
+				System.out.println("数字以外の文字が入力されています。");
+				System.out.println("もういちど");
 			}
 			
 		}
