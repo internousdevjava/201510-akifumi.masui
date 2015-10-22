@@ -22,7 +22,8 @@ public class KisoKadai1
                     	return;//戻り値まで戻す
                     }
             }catch(Exception e){
-                    System.out.println("xに数字以外が入っています");
+                    System.out.println("xに数字以外が入っています。");
+                    System.out.println("再度、数字での入力をお願いします。");
                     return;//戻り値まで戻す
             }
          
@@ -38,7 +39,8 @@ public class KisoKadai1
                 	return;
                 }
             }catch(Exception e){
-                System.out.println("yに数字以外が入っています");
+                System.out.println("yに数字以外が入っています。");
+                System.out.println("再度、数字での入力をお願いします。");
                 return;
             }
             
